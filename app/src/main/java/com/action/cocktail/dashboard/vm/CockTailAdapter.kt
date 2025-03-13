@@ -35,7 +35,11 @@ class CockTailAdapter(
 
         holder.cockTailName.text = drink?.strDrink ?: "Unknown"
         holder.cockTailCategory.text = drink?.strCategory ?: "Unknown"
-        holder.cockTailAlcoholic.text = drink?.strAlcoholic ?: "Unknown"
+        holder.cockTailAlcoholic.text = when (drink?.strAlcoholic) {
+            "Alcoholic" -> "Alcoholic "
+            "Non alcoholic" -> "Non-Alcoholic "
+            else -> "Unknown"
+        }
 
         // Load Image using Glide with placeholder and error handling
         Glide.with(holder.itemView)

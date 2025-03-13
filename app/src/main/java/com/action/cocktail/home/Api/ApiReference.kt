@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object ApiReference {
 
 
-    private const val BASE_URL = " https://www.thecocktaildb.com/api/json/v1/1/"
+    private const val BASE_URL = "https://www.thecocktaildb.com/api/json/v1/1/"
     const val END_POINT = "random.php"
 
     private val retrofit = Retrofit.Builder()

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "507833893755",
+    "project_id": "cocktail-test-application",
+    "storage_bucket": "cocktail-test-application.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:507833893755:android:adf367de8d5b1120d9b3de",
+        "android_client_info": {
+          "package_name": "com.action.cocktail"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2X2FQdAA6utQbFQGCAJYMsmXK7_Un7jM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

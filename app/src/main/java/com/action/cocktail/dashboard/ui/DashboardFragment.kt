@@ -9,7 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.action.cocktail.dashboard.Model.CocktailModel
-import com.action.cocktail.dashboard.Model.DrinkModel
 import com.action.cocktail.dashboard.vm.DashboardViewModel
 import com.action.cocktail.dashboard.vm.CockTailAdapter
 import com.action.cocktail.databinding.FragmentDashboardBinding
@@ -46,7 +45,7 @@ class DashboardFragment : Fragment() {
     private fun setupUI(cocktailModel: CocktailModel) {
         binding.rvcocktail.apply {
             layoutManager = LinearLayoutManager(requireContext())
-            adapter = CockTailAdapter(cocktailModel.drinks ?: emptyList())
+            adapter = CockTailAdapter(cocktailModel?.drinks ?: emptyList())
         }
     }
 

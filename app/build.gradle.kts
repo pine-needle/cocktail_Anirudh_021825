@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -50,6 +51,8 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.ui.graphics.android)
     implementation(libs.androidx.media3.common.ktx)
+    implementation(libs.firebase.messaging.ktx)
+    implementation(libs.firebase.messaging)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -60,9 +63,11 @@ dependencies {
 
     //Viewmodel
     implementation(libs.androidx.lifecycle.runtime.ktx)
-
-    implementation("com.github.bumptech.glide:glide:4.15.1")
-    annotationProcessor("com.github.bumptech.glide:compiler:4.15.1")
+    //Glide
+    implementation(libs.glide)
+    annotationProcessor(libs.compiler)
+    //LeakCanary
+    debugImplementation ("com.squareup.leakcanary:leakcanary-android:2.14")
 
 
 }
